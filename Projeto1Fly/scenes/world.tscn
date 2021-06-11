@@ -1,0 +1,35 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://scenes/player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scripts/world.gd" type="Script" id=2]
+[ext_resource path="res://scenes/cenario.tscn" type="PackedScene" id=3]
+[ext_resource path="res://assets/fontes/Arciform.otf" type="DynamicFontData" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 96
+font_data = ExtResource( 4 )
+
+[node name="world" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 57.8839, 317.252 )
+
+[node name="cenario" parent="." instance=ExtResource( 3 )]
+position = Vector2( 3.05328, -4.0246 )
+z_index = -10
+
+[node name="score" type="Node2D" parent="."]
+z_index = 100
+
+[node name="score" type="Label" parent="score"]
+margin_right = 449.0
+margin_bottom = 107.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.568627, 0.980392, 0, 1 )
+text = "000"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}

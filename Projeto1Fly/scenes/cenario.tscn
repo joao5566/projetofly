@@ -1,0 +1,35 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://assets/sprites/montanha_fundo.png" type="Texture" id=1]
+[ext_resource path="res://assets/sprites/montanha.png" type="Texture" id=2]
+[ext_resource path="res://assets/sprites/nuvens.png" type="Texture" id=3]
+
+[node name="cenario" type="Node2D"]
+
+[node name="fundo" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+centered = false
+
+[node name="fundo2" type="Sprite" parent="."]
+position = Vector2( 1085, 0 )
+texture = ExtResource( 1 )
+centered = false
+
+[node name="montanha" type="Sprite" parent="."]
+position = Vector2( 0, 50 )
+texture = ExtResource( 2 )
+centered = false
+
+[node name="montanha2" type="Sprite" parent="."]
+position = Vector2( 1086, 50 )
+texture = ExtResource( 2 )
+centered = false
+
+[node name="nuvem" type="Sprite" parent="."]
+texture = ExtResource( 3 )
+centered = false
+
+[node name="nuvem2" type="Sprite" parent="."]
+position = Vector2( 2160, 0 )
+texture = ExtResource( 3 )
+centered = false
